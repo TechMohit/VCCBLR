@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="grossary.cyron.com.grossaryvccblrrelesed.about.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+About VCC B2B
+
+VCCB2B is creating a B2B trade platform and providing a connection between Vendors and Customers who are all situated across the country and doing business in particular Food Grains with their respective terms and conditions.
+
+In the first stage, we are inviting all the Manufacturers and Wholesalers dealing with Rice and Rice Products to come onto this platform and get connected to perform their simple and straight forward trade with good intentions.
+
+VCCB2B is trying to help the Users of this trade platform with the technology by which they can perform smooth and healthy business.
+
+We are having a 40 years experience in this field of Rice and Rice Products and we want to help our Vendors and Customers to sell and buy any time 24/7 with their terms and conditions, by providing the available technology.
+
+Our Motto is to connect the Vendors and Customers."/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

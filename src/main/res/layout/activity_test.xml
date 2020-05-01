@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="grossary.cyron.com.grossaryvccblrrelesed.test">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/txtBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gender_background_selector"
+                android:drawableLeft="@drawable/man_avatar_un"
+                android:drawableRight="@drawable/woman_avatar"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relSel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gender_selected_indicator">
+
+            <TextView
+                android:id="@+id/txtSel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

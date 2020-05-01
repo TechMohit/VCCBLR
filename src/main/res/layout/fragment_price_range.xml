@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="grossary.cyron.com.grossaryvccblrrelesed.user.PriceRange.PriceRangeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Price"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etMin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:hint="Minimum Price"
+        android:background="@drawable/custom_spinner_background"/>
+  <!--&lt;!&ndash;  <Spinner
+        android:id="@+id/spin_minprice"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1.4"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/custom_spinner_background">&ndash;&gt;
+
+    </Spinner>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Price"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"/>
+    <!--<Spinner
+        android:id="@+id/spin_maxprice"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1.4"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/custom_spinner_background">
+
+    </Spinner>-->
+
+    <EditText
+        android:id="@+id/etMax"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="sans-serif-condensed"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:paddingLeft="20dp"
+        android:hint="Maximum Price"
+        android:background="@drawable/custom_spinner_background"/>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+
+        android:background="@drawable/circularred"
+        android:text="Search"/>
+
+</FrameLayout>

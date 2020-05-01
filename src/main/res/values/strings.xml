@@ -1,0 +1,8 @@
+<resources>
+    <!--<string name="app_name">Vccb2b</string>-->
+    <string name="app_name">VCCBLR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_admin_order_detail">AdminOrderDetailActivity</string>
+</resources>

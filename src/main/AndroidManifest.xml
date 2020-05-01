@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="grossary.cyron.com.grossaryvccblrrelesed">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logochanged"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".user.PriceRange.ProductViewBasedPrice"></activity>
+        <activity android:name=".admin.CustomerPaymentDetails" />
+        <activity android:name=".admin.PaymentCollection" />
+        <activity android:name=".user.pendingpayment.PendingPayment" />
+        <activity android:name=".user.rewards.Myrewards" />
+        <activity android:name=".admin.zerostock" />
+        <activity android:name=".admin.Loaduser" />
+        <activity
+            android:name=".user.account.SigninActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="grossary.cyron.com.grossaryvccblrrelesed.admin.AdminHomeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".user.account.SignupActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".user.profile.ProfileActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".user.HomeActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".user.category.CategoryActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".user.webview.WebViewActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".admin.orderDetail.AdminOrderDetailActivity"
+            android:label="@string/title_activity_admin_order_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".admin.stock.AdminStockActivity" />
+        <activity android:name="grossary.cyron.com.grossaryvccblrrelesed.about.AboutActivity" />
+        <activity
+            android:name=".admin.preOrderDetail.AdminPreOrderDetailActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+
+</manifest>

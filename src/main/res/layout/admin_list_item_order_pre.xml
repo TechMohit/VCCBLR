@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="@color/whiteBackground"
+            tools:ignore="MissingConstraints" />
+
+
+
+        <TextView
+            android:id="@+id/tvDatePlaced"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/default_circle_indicator_stroke_color"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Place on Thu 04 Oct, 6:00 pm"
+            android:textColor="@color/whiteBackground"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="@color/whiteBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDatePlaced" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Schedule for Sat 06 Oct, 6 am - 10pm "
+            android:textColor="@color/whiteBackground"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_round_corner_strip_grey"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="10dp"
+            android:text="Delivered by Benaka"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/tvProductName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
+
+        <LinearLayout
+            android:id="@+id/linr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvDesc">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/store" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:maxLines="2"
+                    android:paddingRight="10dp"
+                    android:text="Benaka Store - M.G Road sdsdsds"
+                    android:textColor="@color/whiteBackground"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMrpPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="5dp"
+                    android:text="Delivery Charge"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvOrderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="5dp"
+                    android:text="Order ID: ODR323142562"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@mipmap/checked"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="5dp"
+                    android:text="Placed"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="right"
+                    android:text="1,234.00"
+                    android:textColor="@color/whiteBackground"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDeliveryCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="Free"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="1"
+            android:text="Order Value "
+            android:textColor="@color/whiteBackground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/linr"
+            app:layout_constraintTop_toBottomOf="@+id/linr"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:maxLines="1"
+            android:paddingRight="5dp"
+            android:text="1,234"
+            android:textColor="@color/whiteBackground"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/linr"
+            app:layout_constraintTop_toBottomOf="@+id/linr"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_round_corner_red"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:visibility="gone"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvProductName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center|left"
+            android:text="ghghjghghjghjghjghjghjfhfhjfghfgh"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Qty : 34"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/tvProductName1"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductName1" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="$ 24444.498"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductName1" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Type : Delivery"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+        <TextView
+            android:id="@+id/tvremarks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Remarks:"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvType" />
+        <TextView
+            android:id="@+id/tvInvoiceNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="234454893jsuj3bn"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvremarks" />
+
+
+        <TextView
+            android:id="@+id/tvInvoiceDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="234454893jsuj3bn"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInvoiceNo" />
+
+        <TextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center|left"
+            android:text="ghghjghghjghjghjghjghjfhfhjfghfgh"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInvoiceDate"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
+
+
